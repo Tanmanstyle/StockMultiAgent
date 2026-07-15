@@ -1,0 +1,110 @@
+.prediction-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  border-left-width: 3px;
+}
+
+.prediction-card.border-green { border-left-color: var(--green); }
+.prediction-card.border-red { border-left-color: var(--red); }
+.prediction-card.border-amber { border-left-color: var(--amber); }
+
+.prediction-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.pred-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.pred-direction {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+.pred-direction.green { color: var(--green); }
+.pred-direction.red { color: var(--red); }
+.pred-direction.amber { color: var(--amber); }
+
+.prediction-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pred-meta {
+  display: flex;
+  gap: 32px;
+}
+
+.pred-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 120px;
+}
+
+.pred-stat-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.pred-stat-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.confidence-bar-track {
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  margin-top: 4px;
+  width: 100%;
+  max-width: 120px;
+}
+
+.confidence-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.confidence-bar-fill.fill-green { background: var(--green); }
+.confidence-bar-fill.fill-red { background: var(--red); }
+.confidence-bar-fill.fill-amber { background: var(--amber); }
+
+.pred-reasoning {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.pred-factors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.factor-tag {
+  font-size: 11px;
+  padding: 3px 10px;
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--text-secondary);
+}
