@@ -62,10 +62,3 @@ The trust score starts from the predictor's confidence and is adjusted by each c
 
 It's not a trading signal — it's a measure of how well the prediction holds up under adversarial scrutiny.
 
-## Talking Points for Interviews
-
-- **Multi-agent architecture**: each agent has a distinct role, persona, and structured output schema
-- **Prompt engineering**: agents receive the same data but with different system prompts to elicit different reasoning modes
-- **Adversarial design**: the system is explicitly designed to stress-test its own outputs
-- **Real data pipeline**: yfinance integration for live market metrics
-- **Scoring algorithm**: trust score as a weighted combination of agent severities
